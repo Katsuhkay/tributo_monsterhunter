@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body {
+    background-image: url(./img/background.webp);
+}
+
+.conteudo img {
+    align-content: center;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex; /* Ativa flexbox */
+    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+/* Container do logo + título */
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre logo e texto */
+}
+
+.cabecalho-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.cabecalho-logo h1 {
+    font-size: 1.5rem;
+    margin: 0; /* Remove margem padrão do h1 */
+}
+
+/* Menu de navegação */
+.cabecalho-caminho ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho-caminho a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cabecalho-caminho a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal e rodapé (mantidos como no seu original) */
+main {
+    padding: 2rem;
+}
+
+.conteudo {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.conteudo p{
+    padding-bottom: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.formulario {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        padding: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        text-align: center;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.conteudo img {
+    display: block;               /* Transforma a imagem em bloco */
+    margin-left: auto;           /* Margem automática à esquerda */
+    margin-right: auto;          /* Margem automática à direita */
+    max-width: 100%;             /* Garante que a imagem não ultrapasse a largura */
+    height: auto;                /* Mantém a proporção */
+    padding: 20px 0;             /* Espaçamento opcional */
+}
+
+/* Estilo para a legenda (figcaption) */
+.conteudo figcaption {
+    text-align: center;   /* Centraliza o texto */
+    font-style: italic;   /* Estilo opcional para legendas */
+    margin-top: 10px;     /* Espaço entre a imagem e a legenda */
+    color: #555;          /* Cor mais suave para a legenda */
+    max-width: 80%;       /* Limita a largura para melhor leitura */
+}
+
+button {
+    background-color: #000;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: uppercase;
+    letter-spacing: 1px;
+    width: auto;
+    padding: 12px 30px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Defina uma largura adequada */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 30px;
+}
