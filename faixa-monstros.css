@@ -1,0 +1,47 @@
+/* Reset básico para todos os elementos */
+* {
+    margin: 0;          /* Remove margens padrão */
+    padding: 0;         /* Remove paddings padrão */
+    box-sizing: border-box; /* Faz com que padding e border não aumentem a largura do elemento */
+}
+
+.pagina-inteira {
+    min-height: calc(100vh - 120px); /* Considera altura do cabeçalho/rodapé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo externa */
+    background-image: url(./img/latest.webp);
+    background-size: cover;
+}
+
+.faixa-conteudo {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin: 30px auto;
+}
+
+@media (max-width: 600px) {
+    .faixa-conteudo {
+        padding: 20px;       /* Reduz padding em telas pequenas */
+        max-width: 95%;     /* Usa mais espaço da tela */
+    }
+    
+    .pagina-inteira {
+        align-items: flex-start; /* Alinha no topo em mobile */
+        padding-top: 30px;      /* Espaço extra no topo */
+    }
+}
+
+/* Garantir que o rodapé fique fixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

@@ -1,0 +1,59 @@
+Ainda não decidi se coloco formulário ou não, vou deixar aqui pro caso!
+
+HTML:
+
+
+
+            <br><hr>
+            <div class="formulario">
+                <!-- Div para o formulário de contato -->
+                <h2>Alguma dúvida ou feedback? Fale conosco!</h2>
+                <!-- Título do formulário -->
+                <form class="contato-form">
+                    <!-- Formulário de contato -->
+                    <!-- seus inputs aqui -->
+                    <input type="text" placeholder="Seu nome" id="nome" required="">
+                    <!-- Campo de texto para nome (obrigatório) -->
+                    <input type="email" placeholder="Seu email" id="email" required="">
+                    <!-- Campo de email (obrigatório) -->
+                    <input type="tel" placeholder="Seu telefone (opcional)" id="telefone">
+                    <!-- Campo de telefone (opcional) -->
+                    <textarea placeholder="Sua mensagem" id="mensagem" required=""></textarea>
+                    <!-- Área de texto para mensagem (obrigatória) -->
+                    <button type="submit">Enviar</button>
+                    <!-- Botão de envio do formulário -->
+            </form>
+
+CSS:
+
+
+/* Estilo para o formulário de contato */
+.contato-form {
+    display: flex;            /* Layout flex */
+    flex-direction: column;   /* Itens em coluna */
+    align-items: center;      /* Centraliza horizontalmente */
+    gap: 15px;               /* Espaço entre elementos */
+    margin-top: 20px;        /* Margem superior */
+}
+
+/* Estilo para a div do formulário */
+.formulario {
+    max-width: 800px;        /* Largura máxima */
+    margin: 0 auto;          /* Centraliza horizontalmente */
+    margin-top: 0px;         /* Margem superior zero */
+    margin-right: auto;      /* Margem direita automática */
+    margin-bottom: 0px;      /* Margem inferior zero */
+    margin-left: auto;       /* Margem esquerda automática */
+    padding: 20px;           /* Espaçamento interno */
+    padding-top: 20px;       /* Espaçamento superior */
+    padding-right: 20px;     /* Espaçamento direito */
+    padding-bottom: 20px;    /* Espaçamento inferior */
+    padding-left: 20px;      /* Espaçamento esquerdo */
+    text-align: center;      /* Centraliza texto */
+}
+
+/* Estilo padrão para divs */
+div {
+    display: block;          /* Comportamento de bloco */
+    unicode-bidi: isolate;   /* Isolamento de texto bidirecional */
+}

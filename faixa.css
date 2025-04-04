@@ -1,0 +1,55 @@
+/* ESTILOS PARA A FAIXA BRANCA */
+.pagina-inteira {
+    min-height: calc(100vh - 120px); /* Considera altura do cabeçalho/rodapé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo externa */
+    background-image: url(./img/latest.webp);
+    background-size: cover;
+}
+
+.faixa-conteudo {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin: 30px auto;
+}
+
+/* Garantir que o rodapé fique fixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Melhorias para o conteúdo */
+.faixa-conteudo h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.faixa-conteudo p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .faixa-conteudo {
+        padding: 25px;
+        width: 95%;
+    }
+    
+    .pagina-inteira {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}

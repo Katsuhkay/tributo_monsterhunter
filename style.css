@@ -15,7 +15,7 @@ body {
 
 /* Sobrescreve o background do body com uma imagem */
 body {
-    background-image: url(./img/background.webp); /* Imagem de fundo */
+    background-image: url(./img/latest.webp); /* Imagem de fundo */
 }
 
 /* Centraliza imagens dentro da classe conteudo */
@@ -115,36 +115,6 @@ h2 {
     text-align: center;        /* Centraliza texto */
 }
 
-/* Estilo para o formulário de contato */
-.contato-form {
-    display: flex;            /* Layout flex */
-    flex-direction: column;   /* Itens em coluna */
-    align-items: center;      /* Centraliza horizontalmente */
-    gap: 15px;               /* Espaço entre elementos */
-    margin-top: 20px;        /* Margem superior */
-}
-
-/* Estilo para a div do formulário */
-.formulario {
-    max-width: 800px;        /* Largura máxima */
-    margin: 0 auto;          /* Centraliza horizontalmente */
-    margin-top: 0px;         /* Margem superior zero */
-    margin-right: auto;      /* Margem direita automática */
-    margin-bottom: 0px;      /* Margem inferior zero */
-    margin-left: auto;       /* Margem esquerda automática */
-    padding: 20px;           /* Espaçamento interno */
-    padding-top: 20px;       /* Espaçamento superior */
-    padding-right: 20px;     /* Espaçamento direito */
-    padding-bottom: 20px;    /* Espaçamento inferior */
-    padding-left: 20px;      /* Espaçamento esquerdo */
-    text-align: center;      /* Centraliza texto */
-}
-
-/* Estilo padrão para divs */
-div {
-    display: block;          /* Comportamento de bloco */
-    unicode-bidi: isolate;   /* Isolamento de texto bidirecional */
-}
 
 /* Estilo aprimorado para imagens dentro de conteudo */
 .conteudo img {
@@ -233,4 +203,61 @@ button:active {
      * esse efeito será instantâneo (sem animação)
      * Para animar, seria necessário adicionar: transition: all 0.3s ease;
      */
+}
+
+/* Estilo base do botão-link */
+.botao-link {
+    /* Modelo de caixa */
+    display: block;             /* Transforma em bloco (permite margin: auto) */
+    width: 200px;              /* Largura fixa */
+    padding: 12px 30px;        /* Espaçamento interno (12 top/bottom, 30 left/right) */
+    margin: 10px auto;         /* Margem externa (10 top/bottom, centralizado) */
+    border: none;              /* Remove borda padrão */
+    border-radius: 4px;        /* Bordas arredondadas */
+    
+    /* Tipografia */
+    font-size: 15px;           /* Tamanho do texto */
+    text-decoration: none;     /* Remove sublinhado padrão de links */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    letter-spacing: 1px;       /* Espaçamento entre letras */
+    text-align: center;       /* Centraliza o texto */
+    
+    /* Cores */
+    background-color: #000;    /* Cor de fundo preta */
+    color: #f4f4f4;           /* Cor do texto branco/acinzentado */
+    
+    /* Interatividade */
+    cursor: pointer;          /* Muda cursor para indicar elemento clicável */
+    
+    /* Transição para efeito hover suave */
+    transition: background-color 0.3s ease; 
+    /* Anima apenas a cor de fundo por 0.3s com aceleração suave */
+}
+
+/* Estado hover - quando o mouse está sobre o botão */
+.botao-link:hover {
+    background-color: #555;    /* Muda cor de fundo para cinza médio */
+    text-decoration: none;     /* Garante que não apareça sublinhado */
+}
+
+/* Estado active - quando o botão está sendo clicado */
+.botao-link:active {
+    background-color: #333;    /* Cor mais escura durante o clique */
+    transform: scale(0.98);    /* Efeito sutil de "apertar" o botão */
+}
+
+/* Estado focus - importante para acessibilidade de teclado */
+.botao-link:focus {
+    outline: 2px solid #fff;   /* Contorno visível para navegação por teclado */
+    outline-offset: 2px;       /* Espaçamento do contorno */
+}
+
+/* Adicione isso ao seu arquivo style.css ou faixa.css */
+.arma {
+    display: block;           /* Transforma em elemento de bloco */
+    margin: 20px auto;       /* 20px de margem top/bottom, auto para left/right (centraliza) */
+    max-width: 80%;         /* Largura máxima de 80% do container */
+    height: auto;          /* Mantém proporção original */
+    border-radius: 8px;   /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
