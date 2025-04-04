@@ -1,174 +1,236 @@
-/* Reset básico */
+/* Reset básico para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;          /* Remove margens padrão */
+    padding: 0;         /* Remove paddings padrão */
+    box-sizing: border-box; /* Faz com que padding e border não aumentem a largura do elemento */
 }
 
+/* Estilos para o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    line-height: 1.6;               /* Espaçamento entre linhas */
+    background-color: #f4f4f4;      /* Cor de fundo padrão */
+    color: #333;                   /* Cor do texto padrão */
 }
 
+/* Sobrescreve o background do body com uma imagem */
 body {
-    background-image: url(./img/background.webp);
+    background-image: url(./img/background.webp); /* Imagem de fundo */
 }
 
+/* Centraliza imagens dentro da classe conteudo */
 .conteudo img {
-    align-content: center;
+    align-content: center; /* Alinhamento do conteúdo (não funciona diretamente em imagens) */
 }
 
-/* Cabeçalho */
+/* Estilos para o cabeçalho */
 .cabecalho {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
-    display: flex; /* Ativa flexbox */
-    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Para responsividade */
+    background-color: #000;         /* Cor de fundo preta */
+    color: #fff;                   /* Cor do texto branca */
+    padding: 1rem;                 /* Espaçamento interno */
+    display: flex;                 /* Ativa flexbox para layout */
+    justify-content: space-between; /* Espaço entre os itens flex */
+    align-items: center;           /* Centraliza verticalmente */
+    flex-wrap: wrap;               /* Permite quebra de linha em telas pequenas */
 }
 
 /* Container do logo + título */
 .cabecalho-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre logo e texto */
+    display: flex;                 /* Layout flex para alinhar logo e texto */
+    align-items: center;           /* Centraliza verticalmente */
+    gap: 10px;                     /* Espaço entre logo e texto */
 }
 
+/* Estilo para a imagem do logo no cabeçalho */
 .cabecalho-logo img {
-    height: 60px;
-    width: auto;
+    height: 60px;                  /* Altura fixa */
+    width: auto;                   /* Largura proporcional */
 }
 
+/* Estilo para o título no cabeçalho */
 .cabecalho-logo h1 {
-    font-size: 1.5rem;
-    margin: 0; /* Remove margem padrão do h1 */
+    font-size: 1.5rem;             /* Tamanho da fonte */
+    margin: 0;                     /* Remove margem padrão */
 }
 
 /* Menu de navegação */
 .cabecalho-caminho ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none;              /* Remove marcadores de lista */
+    display: flex;                 /* Layout flex para itens lado a lado */
+    gap: 20px;                     /* Espaço entre itens */
 }
 
+/* Estilo para links do menu */
 .cabecalho-caminho a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #fff;                   /* Cor do texto branca */
+    text-decoration: none;         /* Remove sublinhado */
+    font-weight: bold;             /* Texto em negrito */
 }
 
+/* Efeito hover para links do menu */
 .cabecalho-caminho a:hover {
-    text-decoration: underline;
+    text-decoration: underline;    /* Sublinhado ao passar o mouse */
 }
 
-/* Conteúdo principal e rodapé (mantidos como no seu original) */
+/* Conteúdo principal */
 main {
-    padding: 2rem;
+    padding: 2rem;                 /* Espaçamento interno */
 }
 
+/* Estilo para a seção de conteúdo */
 .conteudo {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    background: #fff;              /* Fundo branco */
+    padding: 1.5rem;              /* Espaçamento interno */
+    border-radius: 8px;           /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 1rem;          /* Margem inferior */
 }
 
+/* Estilo para parágrafos dentro de conteudo */
 .conteudo p{
-    padding-bottom: 25px;
-    padding-top: 15px;
-    text-align: center;
+    padding-bottom: 25px;         /* Espaçamento inferior */
+    padding-top: 15px;            /* Espaçamento superior */
+    text-align: center;           /* Texto centralizado */
 }
 
+/* Estilo para o rodapé */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: #333;             /* Cor de fundo escura */
+    color: #fff;                 /* Texto branco */
+    text-align: center;          /* Centraliza texto */
+    padding: 1rem;              /* Espaçamento interno */
+    position: fixed;            /* Fixa na parte inferior */
+    bottom: 0;                 /* Alinha na base */
+    width: 100%;               /* Largura total */
 }
 
+/* Estilo para títulos h1 */
 h1 {
-    text-align: center;
-    font-size: 50px;
+    text-align: center;         /* Centraliza texto */
+    font-size: 50px;           /* Tamanho grande da fonte */
 }
 
+/* Estilo para títulos h2 */
 h2 {
-    text-align: center;
+    text-align: center;        /* Centraliza texto */
 }
 
+/* Estilo para o formulário de contato */
 .contato-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
+    display: flex;            /* Layout flex */
+    flex-direction: column;   /* Itens em coluna */
+    align-items: center;      /* Centraliza horizontalmente */
+    gap: 15px;               /* Espaço entre elementos */
+    margin-top: 20px;        /* Margem superior */
 }
 
+/* Estilo para a div do formulário */
 .formulario {
-        max-width: 800px;
-        margin: 0 auto;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: auto;
-        padding: 20px;
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        text-align: center;
+    max-width: 800px;        /* Largura máxima */
+    margin: 0 auto;          /* Centraliza horizontalmente */
+    margin-top: 0px;         /* Margem superior zero */
+    margin-right: auto;      /* Margem direita automática */
+    margin-bottom: 0px;      /* Margem inferior zero */
+    margin-left: auto;       /* Margem esquerda automática */
+    padding: 20px;           /* Espaçamento interno */
+    padding-top: 20px;       /* Espaçamento superior */
+    padding-right: 20px;     /* Espaçamento direito */
+    padding-bottom: 20px;    /* Espaçamento inferior */
+    padding-left: 20px;      /* Espaçamento esquerdo */
+    text-align: center;      /* Centraliza texto */
 }
 
+/* Estilo padrão para divs */
 div {
-    display: block;
-    unicode-bidi: isolate;
+    display: block;          /* Comportamento de bloco */
+    unicode-bidi: isolate;   /* Isolamento de texto bidirecional */
 }
 
+/* Estilo aprimorado para imagens dentro de conteudo */
 .conteudo img {
-    display: block;               /* Transforma a imagem em bloco */
-    margin-left: auto;           /* Margem automática à esquerda */
-    margin-right: auto;          /* Margem automática à direita */
-    max-width: 100%;             /* Garante que a imagem não ultrapasse a largura */
-    height: auto;                /* Mantém a proporção */
-    padding: 20px 0;             /* Espaçamento opcional */
+    display: block;          /* Transforma em bloco */
+    margin-left: auto;       /* Centraliza horizontalmente */
+    margin-right: auto;     /* Centraliza horizontalmente */
+    max-width: 100%;        /* Não ultrapassa a largura do container */
+    height: auto;          /* Mantém proporção */
+    padding: 20px 0;      /* Espaçamento vertical */
 }
 
-/* Estilo para a legenda (figcaption) */
+/* Estilo para a legenda de imagens */
 .conteudo figcaption {
-    text-align: center;   /* Centraliza o texto */
-    font-style: italic;   /* Estilo opcional para legendas */
-    margin-top: 10px;     /* Espaço entre a imagem e a legenda */
-    color: #555;          /* Cor mais suave para a legenda */
-    max-width: 80%;       /* Limita a largura para melhor leitura */
+    text-align: center;     /* Centraliza texto */
+    font-style: italic;    /* Texto em itálico */
+    margin-top: 10px;     /* Espaço acima */
+    color: #555;         /* Cor cinza */
+    max-width: 80%;     /* Largura máxima */
 }
 
+/* Estilo específico para botões (sobrescreve o anterior) */
 button {
-    background-color: #000;
-    color: #f4f4f4;
-    cursor: pointer;
-    font-size: 15px;
-    text-decoration: uppercase;
-    letter-spacing: 1px;
-    width: auto;
-    padding: 12px 30px;
-    margin-top: 10px;
-    border-radius: 4px;
+    display: block;     /* Comportamento de bloco */
+    margin: 0 auto;    /* Centraliza horizontalmente */
+    width: 200px;     /* Largura fixa */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none;     /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;  /* Cursor de mão */
 }
 
+/* 
+ * Estilo base para todos os botões 
+ * Define a aparência padrão dos botões antes de qualquer interação
+ */
 button {
-    display: block;
-    margin: 0 auto;
-    width: 200px; /* Defina uma largura adequada */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    gap: 30px;
+    background-color: #000;       /* Cor de fundo preta */
+    color: #f4f4f4;              /* Cor do texto branco/acinzentado claro */
+    cursor: pointer;             /* Muda o cursor para indicar que é clicável */
+    font-size: 15px;            /* Tamanho da fonte */
+    text-decoration: uppercase; /* Transforma o texto em MAIÚSCULAS */
+    letter-spacing: 1px;       /* Espaçamento entre letras para melhor legibilidade */
+    width: 200px;             /* Largura fixa do botão */
+    padding: 10px 20px;      /* Espaçamento interno (10px top/bottom, 20px left/right) */
+    margin: 10px auto;      /* Margem externa (10px top/bottom, centralizado horizontalmente) */
+    border: none;          /* Remove qualquer borda padrão */
+    border-radius: 5px;   /* Bordas arredondadas */
+    
+    /* 
+     * Propriedade de transição - prepara o elemento para animações suaves
+     * Anima apenas a propriedade background-color
+     * Duração de 0.3 segundos
+     * Com curva de timing 'ease' (começa e termina devagar)
+     */
+    transition: background-color 0.3s ease;
+}
+
+/* 
+ * Estilo para quando o mouse está sobre o botão (hover state)
+ * Ativado quando o usuário posiciona o cursor sobre o botão
+ */
+button:hover {
+    background-color: #555; /* Muda a cor de fundo para cinza médio */
+    
+    /* 
+     * OBS: A transição definida no estado normal (acima) controla 
+     * como essa mudança de cor vai acontecer (de forma suave)
+     */
+}
+
+/* 
+ * Estilo para quando o botão está sendo clicado (active state)
+ * Ativado enquanto o usuário mantém o botão do mouse pressionado
+ */
+button:active {
+    background-color: #333; /* Cor de fundo mais escura que o hover */
+    
+    /* 
+     * Efeito visual de "apertar" o botão
+     * Reduz ligeiramente o tamanho (98% do tamanho original)
+     */
+    transform: scale(0.98);
+    
+    /* 
+     * OBS: Como não definimos transition para a propriedade transform,
+     * esse efeito será instantâneo (sem animação)
+     * Para animar, seria necessário adicionar: transition: all 0.3s ease;
+     */
 }
